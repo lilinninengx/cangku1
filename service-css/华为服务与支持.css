@@ -1,0 +1,566 @@
+@charset "UTF-8";
+/*service-css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Microsoft Yahei"
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% "Microsoft Yahei", Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+.current{
+    background: pink;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.banner1{
+    width: 1349px;
+}
+/*nav B*/
+/*nav部分*/
+
+.nav {
+    width: 100%;
+    z-index: 10;
+    height: 67px;
+    line-height: 67px;
+    background: white;
+}
+.nav-logo a {
+    display: block;
+    width: 131px;
+    height: 31px;
+    float: left;
+    margin-top: 14px;
+    text-indent: -6000em;
+    background: url(../service-img/logo.png) no-repeat;
+}
+.nav-w-nav ul li {
+    float: left;
+    margin-left: 30px;
+    font: 400 16px/67px "微软雅黑";
+
+    cursor: pointer;
+}
+.nav-w-nav ul em {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: url("../service-img/img_con_cn_sprites_cbg_1.png") no-repeat -517px -3px;
+}
+
+.nav-w-nav a:hover{
+    color: #333333;
+}
+.nav-search {
+    float: right;
+    margin-top: 24px;
+}
+.nav-search input {
+    float: left;
+
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    width: 119px;
+    height: 20px;
+    padding-left: 12px;
+    color: #E5E5E5;
+}
+.nav-search button {
+    float: right;
+    width: 30px;
+    height:20px;
+    background: url(../service-img/img_con_base.png) no-repeat -43px -425px;
+    margin-left: -2px;
+}
+
+/*nav E*/
+.w img{
+    width: 1210px;
+}
+/*content1 B*/
+.need{
+    height: 250px;
+    width: 1209px;
+    background-color: #383838;
+    padding: 50px 70px;
+
+}
+.need-top{
+    position: relative;
+}
+.need-top h1{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-family: "Microsoft Yahei";
+    margin-right: 50px;
+
+}
+.need-top input{
+    width: 583px;
+    height: 38px;
+    background: #545454;
+    border: 1px solid #7E7E7E;
+    font-size: 15px;
+    color: #B0B0B0;
+
+
+}
+.need-top button{
+    display: inline-block;
+    height: 40px;
+    width: 73px;
+    margin-top: 1px;
+    background: #858585;
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+    color: #B9CCB9;
+    cursor: pointer;
+    position: absolute;
+    right: 297px;
+    top: -1px;
+}
+.need-top div{
+    width: 141px;
+    height: 37px;
+    border: 1px solid #949494;
+    position: absolute;
+    right: 75px;
+    top: 5px;
+}
+.need-top div i{
+    display: inline-block;
+    height: 35px;
+    width: 30px;
+    background: url(../service-img/img_con_base.png) no-repeat -368px -647px;
+    margin-left: 22px;
+}
+.need-top div p{
+    display: inline-block;
+    width: 52px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    color: #CCCCCC;
+    font-family: "Microsoft Yahei";
+}
+.need-top-bottom .size{
+    margin-top: 5px;
+}
+.need-top-bottom .size i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../service-img/img_con_base.png) no-repeat -47px -473px;
+}
+.need-top-bottom .size a{
+    color: #ccc;
+    font-size: 15px;
+}
+.need-top-bottom ul{
+    margin-left: 105px;
+
+}
+.need-top-bottom ul li{
+    color: #ccc;
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 15px;
+    
+}
+.need-top-bottom ul li a{
+    color: #ccc;
+    font-size: 15px;
+}
+.need-bottom{
+    border-top: 1px solid #545454;
+}
+.need-bottom li{
+    float: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    position: relative;
+}
+.need-bottom li span{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    left: 75px;
+    bottom: 0px;
+}
+.need-bottom li a{
+    display: inline-block;
+    height: 176px;
+    width: 130px;
+
+}
+.need-bottom li a .i1{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat 0px -1593px;
+
+}
+.need-bottom li a .i1:hover{
+    background: url(../service-img/img_con_base.png) no-repeat 0 -1722px;
+}
+.need-bottom li a .i2{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat 0px -1853px;
+
+}
+.need-bottom li a .i2:hover{
+    background: url(../service-img/img_con_base.png) no-repeat 0 -1983px;
+}
+
+.need-bottom li a .i3{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat -260px -1593px;
+
+}
+.need-bottom li a .i3:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -259px -1722px;
+}
+.need-bottom li a .i4{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat -131px -1853px;
+
+}
+.need-bottom li a .i4:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -131px -1979px;
+}
+.need-bottom li a .i5{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat -388px -1593px;
+
+}
+.need-bottom li a .i5:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -388px -1723px;
+}
+.need-bottom li a .i6{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat -128px -1593px;
+
+}
+.need-bottom li a .i6:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -128px -1727px;
+}
+.need-bottom li a .i7{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url(../service-img/img_con_base.png) no-repeat -515px -1722px;
+
+}
+.need-bottom li a .i7:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -515px -1597px;
+}
+
+/*content1 E*/
+/*content2 B*/
+.choose{
+    height: 245px;
+    width: 1210px;
+    background-color:white;
+    padding: 50px 70px;
+    margin: 0 auto;
+}
+.choose h1{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.choose ul li{
+    float: left;
+    position: relative;
+    padding-right: 69px;
+}
+.choose ul li a{
+    display: inline-block;
+    text-align: center;
+}
+
+.choose li span{
+    position: absolute;
+    font-size: 15px;
+    left: 44px;
+    bottom: -10px;
+}
+/*content2 E*/
+/*content3 B*/
+.focus{
+    height: 688px;
+    width: 1210px;
+    background: white;
+    border-top: 1px solid #D4D4D4;
+    margin: 0 auto;
+
+    
+}
+.focus-top h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+.focus-top ul{
+    width: 345px;
+    margin: 16px auto;
+}
+.focus-top ul li{
+    float: left;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.focus-buttom ul{
+    margin-top: 50px;
+    width: 8094px;
+    position: absolute;
+
+
+}
+.focus-buttom ul li{
+    height: 475px;
+    width: 1349px;
+    float: left;
+
+}
+.focus-buttom ul li .text{
+    width: 685px;
+    height: 475px;
+    float: right;
+    margin-right: 120px;
+}
+.focus-buttom ul li .text h1{
+    font-size: 20px;
+    color: #333;
+}
+.focus-buttom ul li .text p{
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+/*content3 E*/
+/*footer B*/
+.footer-top {
+    width: 100%;
+    height: 278px;
+    background-color: #3B3B3B;
+}
+.footer-left1 dl{
+    float: left;
+    margin-right: 108px;
+}
+.footer-left1 dl dt {
+    font: 400 18px/44px "微软雅黑";
+    padding-top: 9px;
+    color: #FFFFFF;
+}
+.footer-left1 dd {
+    font: 400 12px/20px "微软雅黑";
+    color: #999999;
+}
+.footer-left1 dl dd:hover {
+    cursor: pointer;
+    color: white;
+}
+.ll {
+    float: left;
+    height: 278px;
+    margin-left: 126px;
+    border-left: 1px solid #494949;
+}
+
+.foooter-left2 {
+    float: left;
+    height: 278px;
+    margin-left: 54px;
+
+}
+
+.f-l-s {
+    margin-top: 22px;
+
+}
+.f-xw {
+    cursor: pointer;
+    height: 75px;
+    width: 130px;
+    margin-bottom: 20px;
+    background: url(../service-img/img_con_base.png) no-repeat -236px -152px;
+}
+.f-xw:hover{
+    background: url(../service-img/img_con_base.png) no-repeat -236px -152px;
+}
+.f-l-x {
+    /*background: url("../images/img_con_cn_buy_now.png") no-repeat ;*/
+}
+.f-lr {
+    cursor: pointer;
+    margin-top: 25px;
+    height: 25px;
+    width: 140px;
+    background: url(../service-img/img_con_base.png) no-repeat -8px -86px;
+}
+.footer-end {
+    width: 100%;
+    height: 40px;
+    background-color: #0F1011;
+}
+.footer-end span  {
+    padding-right: 24px;
+    line-height: 40px;
+}
+.footer-end .bq {
+    margin-left: 384px;
+}
+.footer-end .china {
+    /*margin-left: 20px;*/
+    cursor: pointer;
+    width: 25px;
+    height: 16px;
+    background: url(../service-img/img_con_base.png) no-repeat -265px -460px;
+}
+.footer-top .rtop{
+    background: url(../service-img/img_con_base.png) no-repeat -378px -148px;
+    float: right;
+    width: 81px;
+    height: 81px;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 85%;
+    
+}
+
+/*footer E*/
